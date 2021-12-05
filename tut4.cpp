@@ -18,7 +18,6 @@ int main() {
   // 21-50 not important
   // over 65 is important
 
-
   // PROBLEM: Determine School Grade
   // If 5 "Go to Kindergarten"
   // 6-17 go to grades 1-12
@@ -28,16 +27,21 @@ int main() {
   cout << "Enter Age: ";
   cin >> sAge;
   int nAge = stoi(sAge);
-  int nGrade = nAge - 5;
   if (nAge < 5) {
     cout << "Too Young For School\n";
   } else if (nAge == 5) {
     cout << "Go to Kindergarten\n";
   } else if (nAge >= 6 && nAge <= 17) {
+    int nGrade = nAge - 5;
     printf("Go to Grade %d\n", nGrade);
   } else {
     cout << "Go to College\n";
   }
+
+  int age43 = 43;
+  bool canIVote = (age43 >= 18) ? true : false;
+  cout.setf(ios::boolalpha);
+  cout << "Kanye is Old Enough to Vote : " << canIVote << endl;
 
   return 0;
 }
