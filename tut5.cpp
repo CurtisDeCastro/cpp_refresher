@@ -29,7 +29,7 @@ int main() {
   // need to seed random function with a numerical value
   // time works very well as it is always changing
   srand(time(NULL));
-  // use the modulus operator to add upper limit for range of returned values
+  // use the modulus operator to add upper limit that returned values cannot reach
   int secretNum = rand() % 11;
   cout << "Secret Number: " << secretNum << endl;
 
